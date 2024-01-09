@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="img/heroimage.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Sebastian <span>E.</span></a>
+        <div class="menu-right">
+            <nav class="navlist">
+                <a href="index.html" id="home" class="navlink">Home</a>
+                <a href="projects.html" id="projects" class="navlink">Projects</a>
+                <a href="about.html" id="about" class="navlink">About</a>
+            </nav>
+            <div class="contact-container">
+                <a href="contact.html" class="h-btn">Contact me</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="about_hero">
+            <div class="hero_text">
+                <div class="hero">
+                    <h4>Hi, There!</h4>
+                    <h1>I'm <span class="input"></span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facilis earum doloremque
+                        libero totam nobis veniam, quas aspernatur beatae cupiditate, atque corporis odio quod esse
+                        repellat. Omnis quo magni obcaecati!</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/sebastian.engelbreth"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/denrigtigebasse/"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                    <div class="main-btnn">
+                        <a href="contact.html" class="btn">Hire me</a>
+                        <a href="pdf_mappe/pdf_cv.pdf" class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="protrait-container">
+                <img src="img/heroimage.svg" alt="Portræt">
+            </div>
+        </section>
+        <div class="skills">
+            <img src="skillsmappe_portfolio/vscode.png" alt="">
+            <img src="skillsmappe_portfolio/figma.png" alt="">
+            <img src="skillsmappe_portfolio/illustrator.svg.png" alt="">
+            <img src="skillsmappe_portfolio/premierepro.png" alt="">
+            <img src="skillsmappe_portfolio/photoshop.png" alt="">
+            <img src="skillsmappe_portfolio/audition.png" alt="">
+            <img src="skillsmappe_portfolio/lightroom.png" alt="">
+            <img src="skillsmappe_portfolio/spline.jpeg" alt="">
+            <img src="skillsmappe_portfolio/ableton.jpg" alt="">
+        </div>
+        <div class="skills_text">
+            <p>Mine færdigheder omfatter en bred vifte af kreative og tekniske kompetencer, der gør mig i stand til at
+                tackle
+                forskellige opgaver. Jeg er dygtig i brugen af VSCode, hvilket gør mig i stand til effektivt at udvikle
+                og
+                optimere koder. Min ekspertise strækker sig også til designområdet, hvor jeg mestrer Figma, Illustrator
+                og Photoshop,
+                hvilket gør mig i stand til at skabe visuelt imponerende grafik og illustrationer.
+
+                Jeg er også kompetent i videoredigering og produktion ved hjælp af Premiere Pro samt billedbehandling i
+                Lightroom. Min
+                3D-designfærdigheder omfatter brugen af Spline og desuden en smule Cinema 4D, hvilket giver mig mulighed
+                for at skabe komplekse og
+                realistiske visuelle elementer. Når det kommer til lydproduktion, er jeg fortrolig med Ableton og
+                Audition,
+                hvilket gør mig i stand til at skabe og redigere lydspor med stor præcision og professionalisme.
+
+                Min alsidighed inden for teknologi og kreativitet gør mig i stand til at arbejde på tværs af forskellige
+                projekter og
+                leverer resultater af høj kvalitet. Jeg kombinerer min tekniske kunnen med min kreative indsigt for at
+                skabe en
+                holistisk tilgang til problemløsning og projektudvikling.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 - Made by Sebastian Elias Engelbreth</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Sebastian Engelbreth", "Web Developer", "UI/UX Designer"],
+            typeSpeed: 70,
+            backSpeed: 65,
+            loop: true
+        }
+        )
+    </script>
+</body>
+
+</html>

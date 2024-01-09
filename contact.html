@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="img/heroimage.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Sebastian <span>E.</span></a>
+        <div class="menu-right">
+            <nav class="navlist">
+                <a href="index.html" id="home" class="navlink">Home</a>
+                <a href="projects.html" id="projects" class="navlink">Projects</a>
+                <a href="about.html" id="about" class="navlink">About</a>
+            </nav>
+            <div class="contact-container">
+                <a href="contact.html" class="h-btn">Contact me</a>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <section class="about_hero">
+            <div class="spline">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.19/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/JuhcBhhfUaVgAFw7/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="hero_text">
+                <div class="hero">
+                    <h4>Further inquiries?</h4>
+                    <h1>Get in <span>touch!</span></h1>
+                    <p>If you have any questions or want further information, you can contact me directly via my
+                        contact
+                        form.</p>
+                </div>
+            </div>
+            <div class="contact_box">
+                <form name="contact" method="get" data-netlify="true">
+                    <label for="name">Name
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <div>
+                        <br>
+                        <div>
+                            <label for="email">E-mail
+                                <input type="email" name="email" id="email">
+                            </label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="phone">Phone
+                                <input type="tel" name="tel_no" id="phone">
+                            </label>
+                        </div>
+                        <br>
+                        <label for="message">Message
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </label>
+                        <label for="terms" class="terms"><input type="checkbox" name="termscond" id="terms">Accept
+                            terms
+                        </label>
+                        <div class="send_buttondiv">
+                            <button class="send_button">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 - Made by Sebastian Elias Engelbreth</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
