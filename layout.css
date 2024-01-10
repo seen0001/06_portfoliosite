@@ -1,7 +1,3 @@
-div {
-  margin-bottom: 2rem;
-}
-
 div:last-child {
   margin-bottom: 0;
 }

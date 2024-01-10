@@ -68,10 +68,90 @@ span {
   color: var(--main-color);
   text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
+.line {
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: var(--pointgrey-color);
+  transition: 0.2s linear;
+  border-radius: 100px;
+}
 .menu-right {
+  align-items: center;
+  display: none;
+}
+.burgercontainer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: var(--sub-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 860px) {
+  .menu-right {
+    display: flex;
+  }
+}
+
+.burgercontainer {
+  color: pink;
+}
+@media screen and (min-width: 860px) {
+  .burgercontainer {
+    display: none;
+  }
+}
+
 .contact-container {
   margin-left: 50px;
 }
@@ -101,6 +181,14 @@ span {
 }
 /* INDEX */
 
+.headerhomepage {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .spline {
   position: fixed;
   top: 0;
@@ -112,31 +200,56 @@ span {
 main {
   padding: 0;
   /* margin-left: 5%; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 /* ABOUT */
 
 .about_hero {
-  margin-top: 200px;
+  margin-top: 150px; /*<--*/
 }
 
 .protrait-container {
   max-width: 300px;
   margin-inline: auto;
+  margin-top: 50px;
 }
 .skills {
-  margin-top: 100px;
-  margin-inline: 20px;
-  max-width: 200px;
+  margin-inline: 0px;
+  max-width: 350px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
-.skills img {
-  width: 120px;
-  height: 120px;
+@media screen and (min-width: 860px) {
+  .skills {
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+
+  .skill-container {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .skill-container {
+    display: flex;
+    margin-inline: auto;
+  }
+  .skill-container > div {
+    width: 50%;
+  }
+}
+.skill-container > div h2 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.skill-container > div p {
+  line-height: 30px;
 }
 .index_main {
   display: flex;
@@ -150,23 +263,32 @@ main {
   background: transparent;
   color: var(--pointgrey-color);
   transition: all 0.55s ease;
-  padding-inline: 20px;
 }
 .index_main a:hover {
   background: var(--main-color);
   color: var(--bg-color);
 }
+.protrait-container {
+  margin-top: 50px;
+}
+
 @media screen and (min-width: 767px) {
+  .index_main a {
+    padding-inline: 20px;
+  }
   .about_hero {
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
   }
   .hero_text {
-    width: 60%;
+    width: 55%;
+  }
+  .contacthero_text {
+    width: 50%;
   }
   .protrait-container {
     max-width: 400px;
-    width: 40%;
+    width: 45%;
   }
 
   .box_click {
@@ -185,8 +307,25 @@ main {
   padding-inline: 20px;
   margin-left: 8%;
 }
+.skill-text {
+  margin-inline: auto;
+}
+.contact_hero {
+  max-width: 1100px;
+  margin-inline: auto;
+  margin-block: 60px;
+  padding-inline: 20px;
+  margin-left: 8%;
+  margin-top: 150px;
+}
 
-.hero p {
+.contact_hero p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  max-width: 100%;
+  color: #eee;
+  line-height: 30px;
+  margin-bottom: 15px;
   max-width: 660px;
 }
 .div2 {
@@ -203,14 +342,23 @@ main {
   margin: 20px 0px 20px;
   line-height: 1.2;
 }
+.contact_hero h4 {
+  font-size: var(--h4-font);
+}
+.contact_hero h1 {
+  font-size: var(--big-font);
+  font-weight: 900;
+  margin: 20px 0px 20px;
+  line-height: 1.2;
+}
 .hero p {
   font-size: var(--p-font);
   font-weight: 400;
-  width: 620px;
   max-width: 100%;
   color: #eee;
   line-height: 30px;
   margin-bottom: 15px;
+  max-width: 660px;
 }
 .social {
   margin-bottom: 40px;
@@ -339,7 +487,6 @@ main {
   max-width: 1100px;
   margin-inline: auto;
   padding-inline: 20px;
-  /* z-index: 1; */
   display: grid;
   grid-template-areas:
     "img-1 "
@@ -354,6 +501,9 @@ main {
     "tekst-5";
 }
 
+.project_cards h2 {
+  margin-bottom: 25px;
+}
 @media screen and (min-width: 767px) {
   .project_cards {
     grid-template-areas:
@@ -365,14 +515,31 @@ main {
     row-gap: 55px;
     column-gap: 30px;
   }
+  .project_cards {
+    margin-top: 300px;
+  }
+  .project_cards > div {
+    margin-top: 100px;
+  }
 }
 .project_cards > div {
   align-self: center;
   color: #eee;
-  margin-top: 10px;
+  margin-top: 30px;
+}
+.project_cards img {
+  margin-top: 100px;
+}
+@media screen and (min-width: 767px) {
+  .project_cards img {
+    margin-top: 40px;
+  }
 }
 .project_cards > div p {
   color: white;
+}
+.project_cards > div a {
+  margin-top: 10px;
 }
 .project_cards p,
 h3,
@@ -380,12 +547,13 @@ h4 {
   margin-bottom: 10px;
   line-height: 30px;
 }
-.project_cards h3 {
+.project_cards h2 {
   color: var(--main-color);
 }
 .project_cards h4 {
   color: var(--pointgrey-color);
 }
+
 /* CONTACT */
 .contact_textbox {
   width: 600px;
@@ -403,9 +571,16 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 2rem;
-  width: 500px;
+  max-width: 500px;
   background-color: var(--sub-color);
   border-radius: 10px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .contact_box {
+    width: 50%;
+  }
 }
 
 .contact_box form {
@@ -418,13 +593,11 @@ h4 {
 }
 
 input {
-  font-family: "varela", sans-serif;
   padding: 0.5rem;
   width: 100%;
 }
 
 textarea {
-  font-family: "varela", sans-serif;
   height: 150px;
   display: block;
   width: 100%;
@@ -470,10 +643,16 @@ textarea {
 footer {
   bottom: 0;
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   background-color: transparent;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 5rem;
+  margin-top: 20px;
+}
+.homepageFooter {
+  position: absolute;
 }
 
 footer p {
@@ -481,6 +660,15 @@ footer p {
   font-weight: 400;
   color: #eee;
   letter-spacing: 1px;
-  margin-left: 5%;
   z-index: 1;
+}
+.footer_links {
+  color: var(--pointgrey-color);
+  border-radius: 50%;
+  backdrop-filter: brightness(88%);
+  font-size: 20px;
+  margin-right: 17px;
+  box-shadow: 0 0 20px transparent;
+  cursor: pointer;
+  transition: all 0.55s ease;
 }

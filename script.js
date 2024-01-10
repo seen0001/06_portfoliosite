@@ -27,4 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// IMG SLIDER
+// BURGERMENU
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burgerMenu");
+  const menu = document.querySelector(".menu");
+
+  burgerMenu.addEventListener("click", function () {
+    menu.classList.toggle("show");
+  });
+});
