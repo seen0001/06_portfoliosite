@@ -5,21 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="icon" href="img/heroimage.svg">
+    <link rel="icon" href="img/sm_illustrator_logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="media.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">Sebastian <span>E.</span></a>
+        <div class="logo_container">
+            <a href="index.html" class="logo">Sebastian <span>E.</span></a>
+        </div>
         <div class="menu-right">
             <nav class="navlist">
                 <a href="index.html" id="home" class="navlink">Home</a>
@@ -46,6 +55,8 @@
                 </ul>
             </nav>
         </div>
+
+
     </header>
     <main class="project_body">
         <div class="spline" id="planetdisplay">
@@ -58,16 +69,18 @@
             <p>
                 Velkommen til min projektside, hvor jeg præsenterer nogle af mine seneste kreative projekter. Hver
                 udfordring har ført til unikke løsninger, og jeg er stolt af at dele mine erfaringer og resultater med
-                dig. Til højre kan du opleve mine løsninger, og nedenfor har du mulighed for at dykke ned i hvert
+                dig. Nedenfor har du mulighed for at dykke ned i hvert
                 projekt for at få indblik i min designproces og min passion for at skabe
                 meningsfulde digitale oplevelser. </p>
             <br>
-            <h4>Scroll ned og tag et kig!</h4>
+            <button class="scrollbutton" onclick="scrollDown()"></button>
+
         </section>
 
         <div class="project_cards ">
+
             <a href="https://projecthub.dk/kea/02_web/01_website/website/"><img class="img-1"
-                    src="img/computerewebsite.png" alt="dummy"></a>
+                    src="img/computerewebsite.webp" alt="Studiestartsprøve"></a>
             <div class="tekst-1">
                 <h4 class="tagline">Tema 2 - Grunlæggende Web</h4>
                 <h2>Studiestartsprøve</h2>
@@ -77,13 +90,16 @@
 
                     Min rolle omfattede oprettelsen af et responsivt website baseret på udleveret tekst, billeder,
                     wireframe, farver og
-                    typografi. Jeg anvendte centrale principper, teorier og metoder til at designe brugergrænsefladen og
+                    typografi. Jeg anvendte centrale principper, teorier og metoder til at designe
+                    brugergrænsefladen og
                     arbejdede med
-                    aktuelle frontend-teknologier og -miljøer som Visual Studio Code, FileZilla og browserens developer
+                    aktuelle frontend-teknologier og -miljøer som Visual Studio Code, FileZilla og browserens
+                    developer
                     tools. </p>
                 <br>
                 <p>
-                    Gennem opgaven lærte jeg at anvende digitale udvekslingsformater som png, jpg, gif, svg og webP. Jeg
+                    Gennem opgaven lærte jeg at anvende digitale udvekslingsformater som png, jpg, gif, svg og webP.
+                    Jeg
                     fik også en
                     forståelse for praksisnære principper og metoder inden for design af brugergrænseflader samt
                     responsivt design med en
@@ -100,7 +116,7 @@
 
 
 
-            <a href=""><img class="img-2" src="img/uximg.png" alt="dummy"></a>
+            <a href=""><img class="img-2" src="img/uximg.webp" alt="UX Site"></a>
 
             <div class="tekst-2">
                 <h4 class="tagline">Tema 3 - Grundlæggende UX/UI</h4>
@@ -115,9 +131,8 @@
                     udviklede jeg wireframes,
                     og en digital prototype, der blev implementeret med HTML, CSS og JavaScript. Sitet blev desværre
                     aldrig færdigt,
-                    da jeg havde en række ærgelige hændelser i nær familie.</p>
-                <br>
-                <p>Jeg lærte dog en masse af temaet, og i særdeleshed om designkonventioner mm.</p>
+                    da jeg havde en række ærgelige hændelser i nær familie. Jeg lærte dog en masse af temaet, og i
+                    særdeleshed om designkonventioner mm.</p>
                 <br>
                 <p>Gennem denne opgave forbedrede jeg mine færdigheder i at anvende værktøjer som Figma og
                     implementere usability og
@@ -130,9 +145,8 @@
 
 
 
-
             <a href="https://projecthub.dk/kea/04_animation/website/spil.html"> <img class="img-3"
-                    src="img/mmmspil_img.png" alt="dummy"></a>
+                    src="img/mmmspil_img.webp" alt="Mette's Mink Mission spil"></a>
 
             <div class="tekst-3">
                 <h4 class="tagline">Tema 4 - Animation</h4>
@@ -152,24 +166,24 @@
             </div>
 
 
-
             <a href="https://projecthub.dk/kea/05_indhold/videosite/videosite.html"> <img class="img-4"
-                    src="img/videosite_img.png" alt="dummy"></a>
+                    src="img/videosite_img.webp" alt="Videosite"></a>
 
             <div class="tekst-4">
                 <h4 class="tagline">Tema 5 - Indhold</h4>
                 <h2>Video Site</h2>
                 <p>I dette tema fokuserede jeg på grundlæggende videoproduktion, herunder præproduktion, optagelse
                     og postproduktion. Jeg
-                    anvendte smartphone-kameraer og Adobe-software som Premiere Pro, Audition og Ableton Live Suite.</p>
+                    anvendte smartphone-kameraer og Adobe-software som Premiere Pro, Audition og Ableton Live Suite.
+                </p>
                 <a href="https://projecthub.dk/kea/05_indhold/videosite/videosite.html" class="btn">Se siden<i
                         class="fa-solid fa-chevron-right"></i> </a>
             </div>
 
 
 
-            <a href="https://friendly-starburst-edeac4.netlify.app/"> <img class="img-5" src="img/aria.png"
-                    alt="dummy"></a>
+            <a href="https://friendly-starburst-edeac4.netlify.app/"> <img class="img-5" src="img/aria.webp"
+                    alt="Aria coaching site"></a>
             <div class="tekst-5">
                 <h4 class="tagline">Tema 5 - Indhold</h4>
                 <h2>Business Site</h2>
@@ -193,14 +207,19 @@
                 </p>
                 <a href="https://friendly-starburst-edeac4.netlify.app/" class="btn">Se siden<i
                         class="fa-solid fa-chevron-right"></i> </a>
-            </div>
 
+            </div>
         </div>
     </main>
 
     <footer>
 
-        <p>Copyright &copy; 2024 - Made by Sebastian Elias Engelbreth</p>
+        <p>Copyright &copy; 2024 - SEE MEDIA</p>
+        <div class="footer_links">
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact me</a>
+        </div>
         <div class="social">
             <a href="https://www.facebook.com/sebastian.engelbreth"><i class="ri-facebook-fill"></i></a>
             <a href="https://www.instagram.com/denrigtigebasse/"><i class="ri-instagram-fill"></i></a>
